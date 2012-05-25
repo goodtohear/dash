@@ -9,7 +9,5 @@ Meteor.methods
           YouTubeVideos.update video._id, JSON.parse(response.content).data
         else
           console.log "error fetching video id #{video.id}", video
-    # YouTubeVideos.insert({id:"tJiWzZqvL0"})
-    # 3M2f77wRFN0
-    #http://www.youtube.com/watch?v=-tJiWzZqvL0
+
     

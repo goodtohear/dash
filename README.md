@@ -8,11 +8,12 @@ My first [Meteor](http://meteor.com) app.
 
 I tried out a few different techniques here and I know it's not all perfect but as long as I can look at my numbers I don't mind for now... :)
 
-SCREENSHOT
-
+[<img src="https://github.com/goodtohear/dash/raw/master/public/images/screenshot.png" width='600'/>](https://github.com/goodtohear/dash/raw/master/public/images/screenshot.png "Screenshot") 
 
 Demo site
 ==========
+
+[Click here for the demo site](http://goodtohear-dash-demo.meteor.com)
 
 It's only really intended to work in WebKit browsers (Chrome, Safari etc...) and I made it 1024x768 because I wanted it to look good on my iPad. (Where the post-its don't drag-and-drop properly yet... :-/ )
 
