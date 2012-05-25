@@ -1,0 +1,16 @@
+<template name="ad_hoc_panels">
+	{{#each panels}}
+		{{> ad_hoc_panel }}
+	{{/each}}
+</template>
+
+<template name="ad_hoc_panel">
+	<div class="panel">
+		<div>
+			<h3>{{heading}}</h3>
+			<p>
+				<strong>{{total}}</strong> {{label}}
+			</p>
+		</div>
+	</div>
+</template>

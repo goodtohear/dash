@@ -1,0 +1,20 @@
+<template name="post_its">
+	{{#each post_its}}
+		{{> post_it_note }}
+	{{/each}}
+	{{> post_its_pad }}
+</template>
+
+<template name="post_it_note">
+	<!-- ID / name given to preserve focus of textarea -->
+	<div id="post-it-{{_id}}" class="post-it note {{state}}" style="left:{{left}}px; top:{{top}}px; -webkit-transform: rotate({{angle}}deg);">
+		<div class='delete'>delete</div>
+		<textarea name='text'>{{text}}</textarea>
+	</div>
+</template>
+
+<template name="post_its_pad">
+	<div class='post-it pad'>
+		[+] ADD
+	</div>
+</template>

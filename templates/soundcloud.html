@@ -1,0 +1,15 @@
+<template name="soundcloud">
+	<div class='soundcloud panel'>
+		<div>
+			<h3>Soundcloud</h3>
+			<p>
+				<a href="http://soundcloud.com/michaelforrest" target="_blank">
+					<strong>{{ followers_count }}</strong> {{ followers }}
+				</a>
+			</p>
+			<div class='sparkline'>{{sparkline_data}}</div>
+		</div>
+	</div>
+	{{sparklinify}}
+	{{! masonry }}
+</template>

@@ -1,0 +1,56 @@
+.sparkline{
+  width:100%;
+  height:24px;
+  margin-top:16px;
+}
+
+strong{
+  margin-top:-16px;
+  font-size:72px;
+  font-weight:bold;
+  clear:left;
+  display:block;
+  padding:0;
+  margin-bottom:-10px;
+}
+td strong{
+  font-size:36px;
+}
+.panel{
+  float:left;
+  position:relative;
+  margin-left:8px;
+  margin-top:8px;
+  border:10px solid rgba(255,255,255,0.4);
+  width:220px;
+  -webkit-border-radius:8px;
+  font-weight:bold;
+  text-shadow: 1px 2px 3px rgba(0,0,0,.15);
+  
+}
+.wide.panel{
+  width:464px;
+}
+.panel > *{
+  background:#EFEEE0;
+}
+.panel > div{
+    padding:16px;
+}
+.panel h3{
+  margin:0;
+  padding:0;
+  position:absolute;
+  right:8px;
+  bottom:8px;
+  font-size:10px;
+  text-transform: uppercase;
+  color:#999;
+  text-shadow:none;
+}
+.panel table td{
+  padding:16px;
+}
+.panel table td.image{
+  padding:0;
+}

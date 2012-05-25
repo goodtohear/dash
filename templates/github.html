@@ -1,0 +1,28 @@
+<template name="github">
+	<div class="wide panel" id="github">
+		<h3>Github issues</h3>
+		<div class="total">
+			<strong>{{ total }}</strong> {{issues_label}}
+		</div>
+		<table>
+			{{#each issues}}
+				{{#if should_show}}
+					{{> issue }}
+				{{/if}}
+			{{/each}}			
+		</table>
+	</div>
+</template>
+<template name="issue">
+	<tr>
+		<td>
+			<a href="{{html_url}}" target="_blank">
+				#{{ number }}
+			</a>
+		</td>
+		<td>
+			<p>{{title}} <small>{{body}}</small> <span>{{user.login}}</span></p>
+		</td>
+	</tr>
+	{{ masonry }}
+</template>

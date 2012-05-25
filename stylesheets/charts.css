@@ -1,0 +1,16 @@
+.time-series{
+  margin-top:0;
+  margin-bottom:16px;
+}
+.time-series rect{
+/*  stroke:white;*/
+  fill:#717171;
+}
+.time-series .panel .total{
+  position:absolute;
+  background-color:transparent;
+
+}
+.panel > .chart{
+  padding:0;
+}

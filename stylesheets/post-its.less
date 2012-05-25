@@ -1,0 +1,50 @@
+@size: 100px;
+.post-it{
+  width:@size;
+  height:@size;
+  background-color:#FCF6E2;
+  display:block;
+  position:absolute;
+  -webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+  padding:24px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+}
+.post-it.note{
+  cursor:move;
+  z-index:1;
+}
+.post-it.note textarea{
+  font-family:"MF Bold";
+  width:@size;
+  height:@size;
+  float:left;
+  border:none;
+  background-color:#FCF6E2;
+  resize:none;
+  outline:none;
+}
+.post-it.note .delete{
+  text-indent:-99999px;
+  position:absolute;
+  right:0;
+  top:0;
+  width:24px;
+  height:24px;
+  cursor:default;
+}
+.post-it.note:hover .delete{
+  background:url(/images/delete_post_it.png) center center no-repeat;
+}
+.post-it.note.dragging{
+  -webkit-box-shadow:2px 3px 3px rgba(0,0,0,0.2);
+  border:1px solid red;
+}
+.post-it.pad{
+  z-index:0;
+  bottom: -84px;
+  right: -68px;
+  font-weight:bold;
+  color:#CCC;
+  cursor: pointer;
+  -webkit-transform: rotate(-14deg);
+}

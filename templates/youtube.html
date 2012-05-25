@@ -1,0 +1,27 @@
+<template name='youtube'>
+	<div class='wide panel'>
+		<h3>YouTube Videos</h3>
+		<table>
+			{{#each videos}}
+				{{> youtube_video}}
+			{{/each}}
+		</table>
+	</div>
+</template>
+
+<template name='youtube_video'>
+	<tr>
+		<td class="image">
+			<a href="http://youtube.com/watch?v={{id}}" target="_blank">
+				<img src="{{ thumbnail_url }}"/>
+			</a>
+		</td>
+		<td>
+			{{ title }}
+		</td>
+		<td>
+			<strong>{{ viewCount }}</strong> views
+		</td>
+	</tr>
+	{{! masonry }}
+</template>
