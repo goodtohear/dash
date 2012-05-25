@@ -1,2 +1,2 @@
 .DS_Store
-server/private-config.coffee
+private-config.coffee
